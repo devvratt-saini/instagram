@@ -1,29 +1,40 @@
 :root{
      --text: white;
      --btn: rgb(6, 125, 204); 
+     --body-background: rgb(22 33 39);
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body{
+     background-color: var(--body-background);
+     color: var(--text);
      margin: 0;
      display: flex;
      justify-content: center;
      align-items: center;
-     /* border: 1px solid red; */
+     border: 1px solid red;
      height: 100vh;
 }
 
 .container{
-     width: 450px;
-     border: 1px solid black;
+     width: 90vw;
+     border: 1px solid rgb(255, 255, 255);
      height: 90vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
 }
 
 header{
-     border: 1px solid red;
+     /* border: 1px solid red; */
      display: flex;
      flex-direction: column;
      align-items: center;
+}
+
+span{
+     position: relative;
+     top: -1px;
 }
 
 header img{
@@ -31,8 +42,31 @@ header img{
      height: auto;
 }
 
-main{
+/* main section  */
+/* styling form */
+
+/* main{
      border: 1px solid greenyellow;
+} */
+
+form{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     row-gap: 20px;
+
+}
+
+form a{
+     text-decoration: none;
+     color: var(--text);
+}
+
+.similar_input{
+     width: 90%;
+     padding: 15px;
+     border-radius: 10px;
+     outline: none;
 }
 
 input[type=submit]
@@ -40,14 +74,35 @@ input[type=submit]
      background-color: var(--btn);
      color: var(--text);
      padding: 10px;
-     width: 300px;
+     width: 90%;
      border-radius: 20px;
      border: none;
-     
-
 }
 
 input[type=submit]:hover
 {
      cursor: pointer;
+}
+
+/* footer */
+
+footer{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     /* border: 1px solid greenyellow; */
+}
+
+footer button{
+     width: 90%;
+     border: 1px solid var(--btn);
+     background-color: transparent;
+     color: var(--btn);
+     border-radius: 20px;
+     padding: 10px;
+}
+
+footer img{
+     width: 100px;
+     height: auto;
 }

